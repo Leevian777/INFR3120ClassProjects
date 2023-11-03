@@ -3,9 +3,55 @@
 <!--Main Content-->
 <main>
 <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Welcome to the <%= title %> page</h1>
-  </div>
+
+  <%- include partials/home.ejs %>
+  <section id="about">
+    <h1>About Me</h1>
+    <!--Embeding image-->
+      <img src="Personal_Image.png" style="width:120px;height:160px;" class="image">
+        <!--About me-->
+        <p>Hi, my name is Leevian Chen a third year student at Ontario Tech University <br>
+          currently I am studying Networking and IT security.<br>
+          A little bit of information about me is that I am a Taiwanese Canadian watch this video.</p>
+        <!--Embeding video-->
+          <video controls="controls">
+              <source src="Personal_Video.mp4" type="video/mp4">
+              <source src="Personal_Video.ogv" type="video/ogg">
+          </video>
+  </section>
+
+  <section id="projects">
+    <h1>Projects</h1>
+    <!--Content projects-->
+        <div class="projects">
+            <!--Project details-->
+            <p>- Networking 1 and 2: Created a small network in packet tracer using information and skills learned throughout the course. <br>
+            - Object Oriented Programming for IT: Created a program that encrypted and decrypted messages.<br>
+            -Introduction to Python: Created a program to function as a calculator would.<br>            -Introduction to Cloud Services: Final prokect is to get cloud certification</p>
+        </div>
+  </section>
+
+  <section id="contacts">
+    <h1>Contacts</h1>
+    <!--Content contactform-->
+        <form class="contactform">
+            <!--Input name-->
+            <label for="name">Name: </label>
+            <input type="text" name="name" size="40" required><br>
+            <!--Input email-->
+            <label for="email">Email: </label>
+            <input type="email" name="email" size="40" required><br>
+            <!--Input phone number-->
+            <label for="phone">Phone Number: </label>
+            <input type="phone" name="phone" size="12" required><br>  
+            <!--Input message-->
+            <label for="message">Message: </label><br>
+            <textarea type="text" name="message" cols="60" rows="6"required></textarea><br>
+            <!--Submit button-->
+            <button>Submit</button>
+        </form>
+  </section>
+
 </div>
 </main>
 <%- include partials/bottom_nav.ejs %>
