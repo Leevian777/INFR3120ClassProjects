@@ -2,6 +2,9 @@
     position: fixed;
 }
 
+h1{
+    padding-top: 60px;
+}
 body{
     overflow-x: hidden;
 }
@@ -13,5 +16,25 @@ main{
 
 #home, #about, #projects, #contacts{
     width: 100%;
-    height: 720px;
+    height: 100%;
+}
+
+.home{
+    text-align: center;
+    font-size: 17px;
+}
+
+.about{
+    text-align: left;
+    font-size: 17px;
+}
+
+.projects{
+    text-align: left;
+    font-size: 17px;
+}
+
+.contacts{
+    text-align: left;
+    font-size: 17px;
 }

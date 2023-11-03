@@ -1,6 +1,6 @@
 
 <!--NavBar-->
-<nav class="navbar top-fixed navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">Leevian Chen</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,9 +12,9 @@
 
         <li class="nav-item">
         <% if (title == "Home") {%>
-          <a class="nav-link active" href="#home">
+          <a class="nav-link active" href="/">
         <% } else { %>
-          <a class="nav-link" href="#home">
+          <a class="nav-link" href="/">
         <% } %>
           <i class="fa-solid fa-lg fa-house"></i>
           Home</a>
@@ -23,9 +23,9 @@
 
         <li class="nav-item">
         <% if (title == "About") {%>
-          <a class="nav-link active" href="#about">
+          <a class="nav-link active" href="/about">
         <% } else { %>
-          <a class="nav-link" href="#about">
+          <a class="nav-link" href="/about">
         <% } %>
           <i class="fa-solid fa-info"></i>
           About</a>
@@ -34,9 +34,9 @@
 
         <li class="nav-item">
         <% if (title == "Projects") {%>
-          <a class="nav-link active" href="#projects">
+          <a class="nav-link active" href="/projects">
         <% } else { %>
-          <a class="nav-link" href="#projects">
+          <a class="nav-link" href="/projects">
         <% } %>
           <i class="fa-solid fa-file"></i>
           Projects</a>
@@ -45,9 +45,9 @@
 
         <li class="nav-item">
         <% if (title == "Contacts") {%>
-          <a class="nav-link active" href="#contacts">
+          <a class="nav-link active" href="/contacts">
         <% } else { %>
-          <a class="nav-link" href="#contacts">
+          <a class="nav-link" href="/contacts">
         <% } %>
           <i class="fa-solid fa-phone"></i>
           Contacts</a>
